@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="15 10 70 80">
+  <defs>
+    <!-- Cyber gradient -->
+    <linearGradient id="cyberGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00F5FF;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#006AFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8A2BE2;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Glow effect -->
+    <filter id="cyberGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Hexagon background with semi-transparent bluish color -->
+  <polygon points="50,15 80,30 80,70 50,85 20,70 20,30" 
+           fill="rgba(0, 106, 255, 0.1)" />
+  
+  <!-- Hexagon frame -->
+  <polygon points="50,15 80,30 80,70 50,85 20,70 20,30" 
+           fill="none" stroke="url(#cyberGradient)" stroke-width="5" filter="url(#cyberGlow)"/>
+  
+  <!-- Central neural circuit -->
+  <path d="M40,40 L45,40 L45,45 L55,45 L55,40 L60,40" 
+        stroke="url(#cyberGradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M40,50 L45,50 L55,50 L60,50" 
+        stroke="url(#cyberGradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path d="M40,60 L45,60 L45,55 L55,55 L55,60 L60,60" 
+        stroke="url(#cyberGradient)" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>
