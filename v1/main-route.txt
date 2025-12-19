@@ -1,1 +1,1 @@
-https://supercompleteio.vercel.app
+https://supercomplete-io.vercel.app
